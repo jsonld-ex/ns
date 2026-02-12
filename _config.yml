@@ -1,0 +1,11 @@
+# GitHub Pages / Jekyll configuration for jsonld-ex namespace
+title: "JSON-LD Extensions for AI/ML (jsonld-ex)"
+description: "Vocabulary specification for backward-compatible JSON-LD 1.1 extensions targeting AI/ML data exchange"
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Serve .jsonld files with correct MIME type
+include:
+  - "*.jsonld"
+  - "*.ttl"
