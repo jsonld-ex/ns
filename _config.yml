@@ -10,7 +10,7 @@ include:
   - "*.jsonld"
   - "*.ttl"
 
-# Prevent Kramdown from consuming $ math delimiters
-# so they pass through to MathJax for client-side rendering
+# Tell Kramdown to treat $ blocks as math and preserve
+# underscores and other LaTeX syntax inside them
 kramdown:
-  math_engine: null
+  math_engine: mathjax
