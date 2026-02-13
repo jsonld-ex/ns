@@ -9,3 +9,8 @@ plugins:
 include:
   - "*.jsonld"
   - "*.ttl"
+
+# Prevent Kramdown from consuming $ math delimiters
+# so they pass through to MathJax for client-side rendering
+kramdown:
+  math_engine: null
